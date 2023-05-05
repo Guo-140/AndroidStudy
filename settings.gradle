@@ -1,3 +1,4 @@
 rootProject.name = "AndroidTest"
 include ':app'
 include ':TestLib'
+include ':testcommon'
