@@ -32,7 +32,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         button.setAllCaps(false);
         button.setText(title);
         button.setOnClickListener(view -> {
-            append(title + "\n");
+            append(title);
             onClickListener.onClick(view);
         });
         layout.addView(button);
@@ -51,7 +51,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param txt
      */
     protected void append(Object txt) {
-        textView1.append(String.valueOf(txt));
-        Log.i(TAG, "append: " + txt);
+        textView1.append(String.valueOf(txt) + "\n");
+        Log.i(TAG, "append: " + txt + "\n");
     }
 }
